@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Random TF2 Weapon Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgba(243, 208, 158, 0.671);">
+    <h1 id="title" class="center build">Random TF2 Weapon Generator</h1>
 
+    <div id="outer" class="generator">
+        <button id="inner" class="gen build"><h1 id="texter">Generate!</h1></button>
+    </div>
+    
+    <br>
+    
+    <div id="slot" class="outer">
+        
+        <input type="checkbox" id="pri" name="first_item" value="1" class="padded" checked="true"/>
+        <label for="pri" class="sel professor">Primary</label>
+        
+        <input type="checkbox" id="sec" name="first_item" class="padded" value="2" checked="true"/>
+        <label for="sec" class="sel professor">Secondary</label>
+        
+        <input type="checkbox" id="mel" name="first_item" class="padded" value="3" checked="true"/>
+        <label for="mel" class="sel professor">Melee</label>
+
+        <input type="checkbox" id="pda" name="first_item" class="padded" value="4" checked="true"/>
+        <label for="pda" class="sel professor">PDA</label>
+    </div>
+
+    <br>
+    
+    <div id="outer" class="classes">
+        <button class="bigbutton inner secondary" id="sco">Scout</button>
+        <button class="bigbutton inner secondary" id="sol">Soldier</button>
+        <button class="bigbutton inner secondary" id="pyr">Pyro</button>
+
+        <button class="bigbutton inner secondary" id="dem">Demoman</button>
+        <button class="bigbutton inner secondary" id="hea">Heavy</button>
+        <button class="bigbutton inner secondary" id="eng">Engineer</button>
+
+        <button class="bigbutton inner secondary" id="med">Medic</button>
+        <button class="bigbutton inner secondary" id="sni">Sniper</button>
+        <button class="bigbutton inner secondary" id="spy">Spy</button>
+    </div>
+   <!--Yes I know the CSS doesn't look good. Too bad!-->
+   <br>
+   <br>
+   <div id="weapon" class="outer">
+        <p id="itemname" class="weaponname build">N/A</p>
+        
+        <span>
+            <p id="itemclass" class="weaponclass professor inner">N/A</p>
+            <p id="itemsku" class="sku professor inner">Item SKU: N/A</p>
+        </span>
+        <br>
+        
+   </div>
+</body>

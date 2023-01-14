@@ -7,7 +7,7 @@
     <h1 id="title" class="center build">Random TF2 Weapon Generator</h1>
 
     <div id="outer" class="generator">
-        <button id="inner" class="gen build"><h1 id="texter">Generate!</h1></button>
+        <button id="inner" class="gen build" onclick="randomItem()"><h1 id="texter">Generate!</h1></button>
     </div>
     
     <br>
@@ -23,24 +23,22 @@
         <input type="checkbox" id="mel" name="first_item" class="padded" value="3" checked="true"/>
         <label for="mel" class="sel professor">Melee</label>
 
-        <input type="checkbox" id="pda" name="first_item" class="padded" value="4" checked="true"/>
-        <label for="pda" class="sel professor">PDA</label>
     </div>
 
     <br>
     
     <div id="outer" class="classes">
-        <button class="bigbutton inner secondary" id="sco">Scout</button>
-        <button class="bigbutton inner secondary" id="sol">Soldier</button>
-        <button class="bigbutton inner secondary" id="pyr">Pyro</button>
+        <button class="bigbutton inner secondary" id="sco" onclick="randomClassItem('Scout')">Scout</button>
+        <button class="bigbutton inner secondary" id="sol" onclick="randomClassItem('Soldier')">Soldier</button>
+        <button class="bigbutton inner secondary" id="pyr" onclick="randomClassItem('Pyro')">Pyro</button>
 
-        <button class="bigbutton inner secondary" id="dem">Demoman</button>
-        <button class="bigbutton inner secondary" id="hea">Heavy</button>
-        <button class="bigbutton inner secondary" id="eng">Engineer</button>
+        <button class="bigbutton inner secondary" id="dem" onclick="randomClassItem('Demoman')">Demoman</button>
+        <button class="bigbutton inner secondary" id="hea" onclick="randomClassItem('Heavy')">Heavy</button>
+        <button class="bigbutton inner secondary" id="eng" onclick="randomClassItem('Engineer')">Engineer</button>
 
-        <button class="bigbutton inner secondary" id="med">Medic</button>
-        <button class="bigbutton inner secondary" id="sni">Sniper</button>
-        <button class="bigbutton inner secondary" id="spy">Spy</button>
+        <button class="bigbutton inner secondary" id="med" onclick="randomClassItem('Medic')">Medic</button>
+        <button class="bigbutton inner secondary" id="sni" onclick="randomClassItem('Sniper')">Sniper</button>
+        <button class="bigbutton inner secondary" id="spy" onclick="randomClassItem('Spy')">Spy</button>
     </div>
    <!--Yes I know the CSS doesn't look good. Too bad!-->
    <br>
@@ -50,9 +48,10 @@
         
         <span>
             <p id="itemclass" class="weaponclass professor inner">N/A</p>
-            <p id="itemsku" class="sku professor inner">Item SKU: N/A</p>
+            
         </span>
         <br>
         
    </div>
+   <script src="script.js"></script>
 </body>

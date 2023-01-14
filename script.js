@@ -108,7 +108,7 @@ const json ={
           "weapons": {
              "Primary": [
                 "Grenade Launcher",
-                "Lock-n-Load",
+                "Loch-n-Load",
                 "Loose Cannon",
                 "Iron Bomber",
                 "Ali Baba's Wee Booties",
@@ -131,7 +131,7 @@ const json ={
                 "Scotsman's Skullcutter",
                 "Claidheamh Mòr",
                 "Half-Zatoichi",
-                "Persain Persuader"
+                "Persian Persuader"
              ]
           }
        },
